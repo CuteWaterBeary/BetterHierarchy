@@ -27,7 +27,7 @@ namespace Hierarchy2
                 if (script.flattenMode != HierarchyFolder.FlattenMode.None)
                 {
                     script.flattenSpace = (HierarchyFolder.FlattenSpace) EditorGUILayout.EnumPopup("Flatten Space", script.flattenSpace);
-                    script.destroyAfterFlatten = EditorGUILayout.Toggle("Destroy After Flatten", script.destroyAfterFlatten);
+                    script.destroyAfterFlatten = EditorGUILayout.Toggle("Delete Folder After Flattening Hierarchy", script.destroyAfterFlatten);
                 }
             });
             root.Add(imguiContainer);
@@ -35,8 +35,8 @@ namespace Hierarchy2
             return root;
         }
 
-        [MenuItem("Tools/Hierarchy 2/Hierarchy Folder", priority = 0)]
-        [MenuItem("GameObject/Hierarchy Folder", priority = 0)]
+        [MenuItem("Hierarchy/Create Folder", priority = 0)]
+        [MenuItem("GameObject/[GameObject][Hierarchy] Create a Hierarchy Folder", priority = 0)]
         static void CreateInstance(UnityEditor.MenuCommand command)
         {
             GameObject gameObject = new GameObject("Folder", new Type[1] {typeof(HierarchyFolder)});
