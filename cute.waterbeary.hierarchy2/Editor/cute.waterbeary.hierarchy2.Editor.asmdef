@@ -1,0 +1,14 @@
+{
+  "name": "cute.waterbeary.hierarchy2.Editor",
+  "references": [
+    "cute.waterbeary.hierarchy2"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "defineConstraints": [],
+  "optionalUnityReferences": []
+}
