@@ -3,11 +3,11 @@
 
 ### Make your hierarchy more useful
 
-![](Runtime/Hierarchy.png)
+![](Hierarchy.png)
 
 ### Menu
 
-![](Runtime/HierarchyMenu.png)
+![](HierarchyMenu.png)
 
 
 ### New paid version out
