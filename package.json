@@ -1,14 +1,14 @@
 {
-  "name": "cute.waterbeary.hierarchy2",
-  "displayName": "Hierarchy2",
+  "name": "cute.waterbeary.hierarchy",
+  "displayName": "Better Hierarchy",
   "version": "1.0.0",
-  "description": "Describe this Package",
+  "description": "Improved Hierarchy Display",
   "gitDependencies": {},
   "vpmDependencies": {},
   "author": {
     "name": "CuteWaterBeary",
     "email": "original.vr.creator@gmail.com",
-    "url": "https://url.com"
+    "url": "https://discord.gg/RjCae4XZCX"
   },
   "legacyFolders": {},
   "legacyFiles": {}
