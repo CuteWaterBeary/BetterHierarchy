@@ -1,0 +1,15 @@
+{
+  "name": "cute.waterbeary.hierarchy2",
+  "displayName": "Hierarchy2",
+  "version": "1.0.0",
+  "description": "Describe this Package",
+  "gitDependencies": {},
+  "vpmDependencies": {},
+  "author": {
+    "name": "CuteWaterBeary",
+    "email": "original.vr.creator@gmail.com",
+    "url": "https://url.com"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {}
+}
