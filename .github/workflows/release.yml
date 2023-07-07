@@ -3,12 +3,10 @@ name: Build Release
 on:
   workflow_dispatch:
   push:
-    branches: |
-        vpm-packaging
-        main
+    branches: vpm-packaging
 
-env:
-  packageName: "cute.waterbeary.hierarchy2"
+# env:
+  # packageName: "cute.waterbeary.hierarchy2"
 
 permissions:
   contents: write
