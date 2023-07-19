@@ -19,11 +19,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Remove .git and .github directories
+      - name: Remove git directory
         run: rm -rf *
-        working-directory: |
-                              ./.git
-                              ./.github
+        working-directory: /.git
+
+      - name: Remove github directory
+        run: rm -rf *
+        working-directory: /.github
 
       - name: get version
         id: version
