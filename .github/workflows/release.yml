@@ -21,11 +21,11 @@ jobs:
 
       - name: Remove git directory
         run: rm -rf *
-        working-directory: /.git
+        working-directory: ./.git
 
       - name: Remove github directory
         run: rm -rf *
-        working-directory: /.github
+        working-directory: ./.github
 
       - name: get version
         id: version
