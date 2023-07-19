@@ -6,7 +6,7 @@ on:
     branches: vpm_packaging
 
 env:
-  packageName: "cute.waterbeary.hierarchy"
+  packageName: "cute.waterbeary.betterhierarchy"
 
 permissions:
   contents: write
