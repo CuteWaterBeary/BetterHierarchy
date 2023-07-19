@@ -1,8 +1,11 @@
 {
-    "name": "Hierarchy2.Runtime",
-    "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [],
+    "name": "Cute.WaterBeary.BetterHierarchy.Editor",
+    "references": [
+        "Cute.WaterBeary.BetterHierarchy"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

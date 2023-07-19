@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEditor;
 
-namespace Hierarchy2
+namespace BetterHierarchy
 {
     internal class HierarchyResources : ScriptableObject
     {

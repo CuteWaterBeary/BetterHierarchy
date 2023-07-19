@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Hierarchy2
+namespace BetterHierarchy
 {
     public static class UIElementsExstensions
     {

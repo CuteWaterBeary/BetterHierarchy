@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Hierarchy2
+namespace BetterHierarchy
 {
     public static class Texture2DExtensions
     {

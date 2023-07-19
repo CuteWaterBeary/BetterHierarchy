@@ -14,7 +14,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-namespace Hierarchy2
+namespace BetterHierarchy
 {
     [InitializeOnLoad]
     public sealed class HierarchyEditor

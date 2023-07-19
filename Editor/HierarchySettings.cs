@@ -8,7 +8,7 @@ using UnityEditor.UIElements;
 using UnityEngine.Serialization;
 using System.IO;
 
-namespace Hierarchy2
+namespace BetterHierarchy
 {
     [Serializable]
     internal class HierarchySettings : ScriptableObject

@@ -2,9 +2,9 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor;
-using Foldout = Hierarchy2.Foldout;
+using Foldout = BetterHierarchy.Foldout;
 
-namespace Hierarchy2
+namespace BetterHierarchy
 {
     public class InstantInspector : EditorWindow
     {

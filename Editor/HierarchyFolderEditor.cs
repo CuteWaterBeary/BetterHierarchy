@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 using UnityEditor;
 using UnityEditor.UIElements;
 
-namespace Hierarchy2
+namespace BetterHierarchy
 {
     [CustomEditor(typeof(HierarchyFolder))]
     internal class HierarchyFolderEditor : Editor
@@ -36,7 +36,7 @@ namespace Hierarchy2
         }
 
         [MenuItem("Hierarchy/Create Folder", priority = 0)]
-        [MenuItem("GameObject/[GameObject][Hierarchy] Create a Hierarchy Folder", priority = 0)]
+        [MenuItem("GameObject/Create a Hierarchy Folder", priority = 0)]
         static void CreateInstance(UnityEditor.MenuCommand command)
         {
             GameObject gameObject = new GameObject("Folder", new Type[1] {typeof(HierarchyFolder)});
