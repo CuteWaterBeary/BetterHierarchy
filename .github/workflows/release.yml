@@ -22,7 +22,7 @@ jobs:
       - name: Remove .git and .github directories
         run: rm -rf *
         working-directory: |
-                              ./git
+                              ./.git
                               ./.github
 
       - name: get version
