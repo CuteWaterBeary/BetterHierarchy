@@ -19,17 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Remove git directory
-        run: rm -rf *
-        working-directory: ./.git
-
-      - name: Remove github directory
-        run: rm -rf *
-        working-directory: ./.github
-
       - name: get version
         id: version
-        uses: notiz-dev/github-action-json-property@7a701887f4b568b23eb7b78bb0fc49aaeb1b68d3
+        uses: CuteWaterBeary/github-action-json-property@7a701887f4b568b23eb7b78bb0fc49aaeb1b68d3
         with:
             path: "package.json"
             prop_path: "version"
@@ -40,19 +32,21 @@ jobs:
           echo "unityPackage=${{ env.packageName }}-${{ steps.version.outputs.prop }}.unitypackage" >> $GITHUB_ENV
 
       - name: Create Zip
-        uses: thedoctor0/zip-release@09336613be18a8208dfa66bd57efafd9e2685657
+        uses: CuteWaterBeary/zip-release/@a24011d8d445e4da5935a7e73c1f98e22a439464
         with:
           type: "zip"
           # directory: "/"
           filename: "${{env.zipFile}}"
+          exclusions: '*.git* *.github* .editorconfig .gitignore'
 
       - run: find *.meta >> metaList
 
       - name: Create UnityPackage
-        uses: pCYSl5EDgo/create-unitypackage@cfcd3cf0391a5ef1306342794866a9897c32af0b
+        uses: CuteWaterBeary/create-unitypackage@cfcd3cf0391a5ef1306342794866a9897c32af0b
         with:
           package-path: ${{ env.unityPackage }}
           include-files: metaList
+
 
       - name: Make Github Release
         uses: CuteWaterBeary/action-gh-release@ff6ab387db4b6c9821451da4521b6089e74e2168
@@ -69,6 +63,7 @@ jobs:
           append_body: false
 
           # "Newline-delimited list of path globs for asset files to upload"
+
           files: |
             ${{ env.zipFile }}
             ${{ env.unityPackage }}
